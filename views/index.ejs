@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-<h1>Hola mundo</h1>
-  </body>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <header>
+    <div id="titulo">
+      <h1>Mi Aplicación</h1>
+    </div>
+    <div id="nav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section id="caja-principal">
+      <div id="bienvenida">
+        <h1>¡Bienvenido!</h1>
+        <p>Descubre todas las funcionalidades que tenemos preparadas para ti. Únete a nuestra comunidad y disfruta de
+          una experiencia única pensada para tus necesidades.</p>
+        <p>Accede a tu cuenta o regístrate en segundos para comenzar tu aventura con nosotros.</p>
+      </div>
+
+      <div id="formularios">
+        <div id="registro">
+          <h2>Ya estoy registrado</h2>
+          <div id="formulario_registrado">
+            <form action="" method="POST">
+              <input type="email" id="email" name="email" required>
+              <br>
+              <input type="password" id="password" name="password" required>
+              <br>
+              <div id="botones-registro">
+                <button id="enviar" type="submit">Enviar</button>
+                <button id="cancelar" type="submit">Cancelar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="no_registrado">
+          <h2>No estoy registrado aún</h2>
+          <p>Introduce tu correo electrónico para crear una cuenta.</p>
+          <div id="formulario_no_registrado">
+            <form action="" method="POST">
+              <input type="email" id="email" name="email" required>
+              <br>
+              <div id="botones_no_registrado">
+                <button id="envio" type="submit">Enviar</button>
+                <button id="cancelar" type="submit">Cancelar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="#">Alejandro Gálvez 2025</a></p>
+  </footer>
+</body>
+<script src="/javascripts/script.js"></script>
+
 </html>
